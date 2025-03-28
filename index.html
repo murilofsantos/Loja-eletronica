@@ -1,0 +1,223 @@
+
+<head>
+    <title>Loja de Eletrônicos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Eletrônicos Online</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Bem-vindo à Melhor Loja de Eletrônicos!</h2>
+            <p>Ofertas imperdíveis de produtos incríveis.</p>
+            <a href="#produtos" class="cta-button">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="https://www.bing.com/images/blob?bcid=sjSNq.LtkkQINw" alt="Produto 1">
+                <h3>Xiaomi Pocophone Poco X6 Pro 5G Dual SIM 512 GB preto 12 GB RAM</h3>
+                <p>R$ 1.999,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_980738-MLA82430179791_022025-F.webp" alt="Produto 2">
+                <h3>Headset Bluetooth Redução De Ruído Do Anc Hifi Com Microfone Cor Azul-celeste</h3>
+                <p>R$ 169,20</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://a-static.mlcdn.com.br/800x560/notebook-lenovo-ideapad-1i-intel-core-i5-8gb-ram-ssd-512gb-windows-11-156-15iau7/magazineluiza/238006100/17c42205bcab59aafd9cdda3d73036da.jpg" alt="Produto 3">
+                <h3>Notebook Lenovo IdeaPad 1i Intel Core i5 - 8GB RAM SSD 512GB Windows 11 15,6” 15IAU7</h3>
+                <p>R$ 3.000,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida? Fale conosco!</p>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.banner {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e04e29;
+}
+
+.produtos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    color: #ff5733;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.produto button:hover {
+    background-color: #333;
+}
+
+.contato {
+    background-color: #e4e4e4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contato button:hover {
+    background-color: #e04e29;
+}
+
+    </style>
+</body>
+</html>
